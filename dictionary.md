@@ -84,3 +84,25 @@ Flexbox er en plasseringsmetode i CSS som brukes for å plassere elementer på e
 Flexbox brukes på foreldre-elementet.
 
 Det er barna inni forelderen som blir plassert med flex.
+
+## Media query
+
+Media query brukes for å endre CSS basert på skjermstørrelse eller type enhet.
+
+Dette brukes ofte for å lage responsive nettsider som fungerer pa mobil, nettbrett og desktop.
+
+En media query setter en betingelse. Hvis skjermen oppfyller betingelsen, blir CSS-reglene brukt.
+
+Vanlig bruk:
+
+- max-width = gjelder for skjermer som er mindre enn en bestemt bredde
+- min-width = gjelder for skjermer som er storre enn en bestemt bredde
+
+### Viktig prinsipp:
+
+Media query brukes ofte for å endre layout, for eksempel:
+
+- endre flex-direction
+- justere bredder
+- endre font-size
+- flytte eller skjule elementer
