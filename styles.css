@@ -30,6 +30,12 @@ img {
   list-style-type: none;
 }
 
+.hamburgerIcon {
+  height: 3.2rem; 
+  width: 3.2rem;
+  display: none;
+}
+
 /* MAIN */
 /* Hero */
 .hero {
@@ -45,6 +51,12 @@ img {
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
+}
+
+@media (max-widht: 426px) {
+  .heroIntro {
+    flex-direction: column;
+  }
 }
 
 .heroText {
@@ -67,9 +79,11 @@ img {
   align-items: center;
 }
 
+
 .aboutTextContainer,
 .aboutImgContainer {
-  width: 50%;
+  min-width: 50%;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,7 +106,7 @@ img {
 
 /* Projects */
 .projects {
-  height: 100dvh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,6 +118,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1.6rem;
   list-style-type: none;
   padding: 0; /* Padding kan bruke px for estetisk endring */
@@ -127,4 +142,31 @@ img {
   justify-content: center;
   font-size: 3.2rem;
   font-weight: bold;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 426px) {
+/* HEADER */
+.navList {
+  display: none;
+}
+
+.hamburgerIcon {
+  display: inline;
+}
+
+/* MAIN */
+.heroIntro {
+  flex-direction: column;
+}
+
+.about {
+  flex-direction: column;
+}
+
+.projectsList {
+  flex-direction: column;
+}
+
+/* FOOTER */
 }
